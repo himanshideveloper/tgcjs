@@ -1,8 +1,13 @@
 // Write a program to print days of a week using switch case.
 
-let day = 2;
+
+let date = new Date();
+let day = date.getDay(); // Get the current day of the week (0 for Sunday, 1 for Monday, ..., 6 for Saturday)
 
 switch(day){
+    case 0 : 
+        console.log('Sunday');
+        break;
     case 1 : 
         console.log('Monday');
         break;
@@ -10,18 +15,15 @@ switch(day){
         console.log('Tuesday');
         break;
     case 3 : 
-    console.log('Wednesday');
-    break;
+        console.log('Wednesday');
+        break;
     case 4 : 
         console.log('Thursday');
-    break;
+        break;
     case 5 : 
-    console.log('Friday');
-    break;
+        console.log('Friday');
+        break;
     case 6 : 
         console.log('Saturday');
-    break;
-    case 7 : 
-        console.log('Sunday');
-    break;   
+        break;
 }
