@@ -3,12 +3,12 @@
 let d = 20;
 let c = 19.5;
 
-switch(d > c){
-    case d: 
-    console.log('d is a maximum number');
-    break;
-    
-    case c :
-        console.log('c is a maximum number');
-        break;
+switch (true) {
+	case c > d:
+		console.log('c is a maximum number');
+		break;
+
+	default:
+		console.log('d is a maximum number');
+		break;
 }
